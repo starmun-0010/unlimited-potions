@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "xyz.starmun.unlimitedpotions.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ClientboundUpdateMobEffectPacketMixin",
+    "ClientPacketListenerMixin"
+  ],
+  "client": [
+
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
