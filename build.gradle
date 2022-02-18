@@ -67,6 +67,9 @@ repositories {
         name = "Progwml6 (Just Enough Items)"
         url = "https://dvs1.progwml6.com/files/maven/"
     }
+    maven {
+        url "https://www.cursemaven.com"
+    }
 }
 
 dependencies {
@@ -99,6 +102,8 @@ dependencies {
     modCompileOnly "mezz.jei:jei-1.16.5:${jei_version}:api"
     // at runtime, use the full JEI jar
     modRuntimeOnly "mezz.jei:jei-1.16.5:${jei_version}"
+    modRuntimeOnly "curse.maven:mahou-tsukai-342543:3630750"
+
 }
 
 processResources {

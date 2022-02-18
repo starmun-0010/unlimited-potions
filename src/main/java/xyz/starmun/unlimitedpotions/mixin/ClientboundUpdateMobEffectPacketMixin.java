@@ -26,7 +26,7 @@ public class ClientboundUpdateMobEffectPacketMixin implements IUPClientboundUpda
     }
     @Inject(method = "write", at=@At("TAIL"))
     public void write(FriendlyByteBuf arg, CallbackInfo ci){
-        arg.writeByte(this.substituteEffectId);
+        arg.writeVarInt(this.substituteEffectId);
     }
 
     @Override
